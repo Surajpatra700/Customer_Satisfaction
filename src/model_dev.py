@@ -25,12 +25,12 @@ class Model(ABC):
         pass
 
 class LinearRegressionModel(Model):
-    def train(self, X_train, y_train, **kwargs):
+    def train(self, X_train, y_train, **kwargs): #**kwargs
         try:
-            reg = LinearRegression()
+            reg = LinearRegression(**kwargs)
             reg.fit(X_train, y_train)
             logging.info("Model training Completed!")
             return reg
         except Exception as e:
-            logging.error("Error in preprocessing data: {}".format(e))
+            logging.error(e)
             raise e

@@ -17,5 +17,5 @@ def ingest_df(data_path: str) -> pd.DataFrame:
         df = ingest_data.get_data()
         return df
     except Exception as e:
-        logging.error(f"Error while ingesting data: {e}")
+        logging.error(e)
         raise e

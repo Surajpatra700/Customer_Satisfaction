@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/suraj/OneDrive/Desktop/Program%20Files/ML_PIPELINE_MLOPS/venv/mlruns/0/16db5c45f00842d8958f428d7e90ebcb/artifacts
+end_time: 1707169004693
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 16db5c45f00842d8958f428d7e90ebcb
+run_name: adorable-crow-619
+run_uuid: 16db5c45f00842d8958f428d7e90ebcb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707169002262
+status: 3
+tags: []
+user_id: suraj

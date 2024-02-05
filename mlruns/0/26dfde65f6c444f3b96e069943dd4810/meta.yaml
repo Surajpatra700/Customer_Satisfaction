@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/suraj/OneDrive/Desktop/Program%20Files/ML_PIPELINE_MLOPS/venv/mlruns/0/26dfde65f6c444f3b96e069943dd4810/artifacts
+end_time: 1707169001271
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 26dfde65f6c444f3b96e069943dd4810
+run_name: monumental-slug-806
+run_uuid: 26dfde65f6c444f3b96e069943dd4810
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707168997040
+status: 3
+tags: []
+user_id: suraj
