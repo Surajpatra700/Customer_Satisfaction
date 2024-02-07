@@ -2,7 +2,7 @@ import logging
 import pandas as pd
 from zenml import step
 
-from src.evaluation import MSE, R2, RMSE
+from src.evaluation import MSE, R2Score, RMSE
 from sklearn.base import RegressorMixin
 
 from typing import Tuple
@@ -28,15 +28,15 @@ def evaluate_model(
         mse = mse_class.calculate_score(y_test, prediction)
         mlflow.log_metric("mse",mse)
 
-        r2_class = R2()
-        r2 = r2_class.calculate_score(y_test, prediction)
-        mlflow.log_metric("r2",r2)
+        r2_class = R2Score()
+        r2_score = r2_class.calculate_score(y_test, prediction)
+        mlflow.log_metric("r2_score",r2_score)
 
         rmse_class = RMSE()
         rmse = rmse_class.calculate_score(y_test, prediction)
         mlflow.log_metric("rmse",rmse)
 
-        return r2, rmse # r2_score
+        return r2_score, rmse # r2_score
     except Exception as e:
         logging.error(e)
         raise e
